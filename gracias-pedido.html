@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido realizado · Gracias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/index-BZdR6oLg.css" />
+
+    <link rel="canonical" href="https://silviagalindo.com/gracias-pedido.html" />
+</head>
+
+<body class="min-h-screen bg-[#f7f4ee] text-slate-800">
+    <main class="relative isolate">
+        <!-- Decoración de fondo -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden">
+            <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-br from-[color:var(--color-teal)]/25 to-[color:var(--color-gold)]/15 blur-2xl"></div>
+            <div class="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-gradient-to-br from-[color:var(--color-ocean)]/20 to-[color:var(--color-moss)]/15 blur-2xl"></div>
+            <div class="absolute inset-x-0 top-0 h-px bg-black/5"></div>
+            <div class="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(#000_1px,transparent_1px)] [background-size:18px_18px]"></div>
+        </div>
+
+        <div class="container relative mx-auto flex min-h-screen items-center justify-center py-16">
+            <section class="w-full max-w-2xl">
+                <div class="rounded-3xl border border-black/10 bg-white/70 p-6 shadow-2xl backdrop-blur-md sm:p-10">
+                    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+                        <!-- Sello -->
+                        <div class="shrink-0">
+                            <div class="relative grid size-16 place-items-center rounded-2xl bg-gradient-to-br from-[color:var(--color-teal)]/25 to-[color:var(--color-gold)]/20 ring-1 ring-black/10">
+                                <svg class="size-8 text-slate-900" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="absolute -bottom-2 -right-2 rounded-full bg-white px-2 py-1 text-[0.7rem] font-semibold text-slate-700 shadow ring-1 ring-black/5">
+                                    OK
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Texto -->
+                        <div class="min-w-0">
+                            <p class="text-accent text-2xl text-slate-700">¡Muchas Gracias!</p>
+
+                            <h1 class="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
+                                Pedido realizado
+
+                            </h1>
+                            <div class="shrink-0">
+                                <div class="relative grid size-16 place-items-center rounded-2xl
+              bg-gradient-to-br from-[color:var(--color-gold)]/30
+              to-[color:var(--color-teal)]/25
+              ring-1 ring-black/10">
+                                    <span class="text-3xl">📚💛</span>
+                                </div>
+                            </div>
+
+                            <p class="mt-3 text-base leading-relaxed text-slate-700 sm:text-lg ">
+
+                                <br />
+                                Hemos recibido tu pedido correctamente. En breve recibirás un correo automático confirmando los datos enviados. <br />
+                            </p>
+
+
+
+
+                            <!-- Info útil -->
+                            <div class="mt-6 rounded-2xl border border-black/10 bg-white/60 p-4">
+                                <div class="flex items-start gap-3">
+
+                                    <div class="min-w-0">
+                                        <p class="font-semibold">Qué pasa ahora<br /></p>
+                                        <p class="text-muted-foreground">
+                                            <br />
+                                            <b>Opción 1 · Pagado con Bizum mediante QR</b><br>
+                                            Te mandaremos un email con la fecha de envío
+                                        </p>
+
+                                        <p class="text-muted-foreground">
+                                            <br />
+                                            <b>Opción 2 · Pago Bizum manual</b><br>
+                                            Te mandaremos un email con las instrucciones para realizar el pago.
+                                        </p>
+                                        <p class="mt-1 text-sm text-slate-700">
+
+                                        Si no recibes el email, revisa en la carpeta de “Spam” (a veces el misterio también llega ahí).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                                <span class="text-xs text-slate-600">
+                                    <br />Si te urge, espera… mentira: escríbenos desde la web y lo aceleramos.
+                                </span>
+                                <a href="/" class="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-3 text-sm font-semibold shadow hover:opacity-90">
+                                    Volver
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-6 text-center text-xs text-slate-600 mt-8">
+                    © <span id="year"></span> Silvia Galindo Julián
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
