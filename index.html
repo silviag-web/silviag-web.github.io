@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Silvia Galindo Julián  · Novelas de romance y misterio</title>
+    <title>Silvia Galindo Julián · Escritora de thriller, misterio y romance</title>
 
     <!-- Fuentes (si quieres aún más “limpio”, las puedes auto-hospedar más adelante) -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -12,23 +12,24 @@
 
     <!-- CSS del diseño (esto es lo que mantiene el look) -->
     <link rel="stylesheet" href="assets/index-BZdR6oLg.css" />
+    <link rel="stylesheet" href="assets/prelaunch.css" />
 
     <!-- SEO / Social (ajusta descripción e imagen si quieres) -->
     <link rel="canonical" href="https://silviagalindo.com/" />
-    <meta name="description" content="Web oficial de Silvia Galindo Julián, escritora de novelas románticas y de thrillers. Sinopsis, portadas, biografía y sistema de compra con Bizum" />
+    <meta name="description" content="Web oficial de Silvia Galindo Julián, autora de Sueña conmigo y Cuando lo pude contar. Descubre su próxima novela, Perdida entre sombras, actualmente en preparación." />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://silviagalindo.com/" />
-    <meta property="og:title" content="Silvia Galindo Julián  · Novelas de romance y misterio" />
-    <meta property="og:description" content="Web oficial de Silvia Galindo Julián, escritora de novelas románticas y de thrillers. Sinopsis, portadas, biografía y sistema de compra con Bizum" />
-    <meta property="og:image" content="https://silviagalindo.com/images/hero-background-cliffs.png" />
+    <meta property="og:title" content="Silvia Galindo Julián · Escritora de thriller, misterio y romance" />
+    <meta property="og:description" content="Descubre Perdida entre sombras, la próxima novela de Silvia Galindo Julián, actualmente en preparación." />
+    <meta property="og:image" content="https://silviagalindo.com/images/perdida-entre-sombras-portada-provisional.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Silvia Galindo Julián  · Novelas de romance y misterio" />
-    <meta name="twitter:description" content="Web oficial de Silvia Galindo Julián, escritora de novelas románticas y de thrillers. Sinopsis, portadas, biografía y sistema de compra con Bizum" />
-    <meta name="twitter:image" content="https://silviagalindo.com/images/hero-background-cliffs.png" />
+    <meta name="twitter:title" content="Silvia Galindo Julián · Escritora de thriller, misterio y romance" />
+    <meta name="twitter:description" content="Descubre Perdida entre sombras, la próxima novela de Silvia Galindo Julián, actualmente en preparación." />
+    <meta name="twitter:image" content="https://silviagalindo.com/images/perdida-entre-sombras-portada-provisional.png" />
 </head>
 
 <body>
@@ -36,13 +37,21 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Silvia Galindo Julián",
-          "jobTitle": "Escritora",
-          "url": "https://silviagalindo.com",
-          "sameAs": [
-            "https://www.instagram.com/silvia.galindo.jw",
-            "https://www.facebook.com/..."
+          "@graph": [
+            {
+              "@type": "Person",
+              "@id": "https://silviagalindo.com/#silvia-galindo-julian",
+              "name": "Silvia Galindo Julián",
+              "jobTitle": "Escritora",
+              "url": "https://silviagalindo.com/",
+              "sameAs": [
+                "https://www.instagram.com/silvia.galindo.jw",
+                "https://www.facebook.com/silviagalindojulian",
+                "https://x.com/SilviaGalindojw"
+              ]
+            },
+            { "@type": "Book", "name": "Sueña conmigo", "author": { "@id": "https://silviagalindo.com/#silvia-galindo-julian" } },
+            { "@type": "Book", "name": "Cuando lo pude contar", "author": { "@id": "https://silviagalindo.com/#silvia-galindo-julian" } }
           ]
         }
     </script>
@@ -55,43 +64,52 @@
                 <div class="container mx-auto">
                     <div class="flex items-center justify-between py-4">
                         <a href="/"><span class="text-2xl md:text-3xl text-display font-semibold text-foreground hover:text-primary transition-colors">Silvia Galindo Julián</span></a>
-                        <div class="hidden md:flex items-center gap-8"><a href="#novelas" class="text-foreground hover:text-primary transition-colors font-medium">Novelas</a><a href="#biografia" class="text-foreground hover:text-primary transition-colors font-medium">Biografía</a><a href="#resenas" class="text-foreground hover:text-primary transition-colors font-medium">Reseñas</a><a href="#eventos" class="text-foreground hover:text-primary transition-colors font-medium">Eventos</a><a href="#contacto" class="text-foreground hover:text-primary transition-colors font-medium">Contacto</a></div><a href="#comprar" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 py-2 has-[&gt;svg]:px-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">Comprar Ahora</a>
+                        <div class="hidden md:flex items-center gap-6"><a href="#proxima-novela" class="text-foreground hover:text-primary transition-colors font-medium">Próxima novela</a><a href="#novelas-publicadas" class="text-foreground hover:text-primary transition-colors font-medium">Novelas</a><a href="#biografia" class="text-foreground hover:text-primary transition-colors font-medium">Biografía</a><a href="#resenas" class="text-foreground hover:text-primary transition-colors font-medium">Reseñas</a><a href="#eventos" class="text-foreground hover:text-primary transition-colors font-medium">Eventos</a><a href="#contacto" class="text-foreground hover:text-primary transition-colors font-medium">Contacto</a></div><a href="#comprar" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 py-2 has-[&gt;svg]:px-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">Comprar ahora</a>
                     </div>
                 </div>
             </nav>
-            <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-                <div class="absolute inset-0 z-0" style="background-image: url(&quot;/images/hero-background-cliffs.png&quot;); background-size: cover; background-position: center center; opacity: 0.5;"></div>
+            <section class="hero-prelaunch relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+                <div class="absolute inset-0 z-0" style="background-image: url(&quot;/images/hero-background-cliffs.png&quot;); background-size: cover; background-position: center center;"></div>
                 <div class="container relative z-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                         <div class="space-y-6">
-                            <div class="inline-block"><span class="text-accent text-xl md:text-2xl text-white">Bienvenido al mundo de</span></div>
+                            <div class="hero-kicker">Próxima novela · En preparación</div>
                             <h1 class="text-display text-5xl md:text-7xl font-bold text-foreground leading-tight">Silvia Galindo Julián</h1>
-                            <p class="text-xl md:text-2xl text-white leading-relaxed">Donde el romance y el misterio se entrelazan en historias que cautivan el corazón y la mente</p>
-                            <div class="flex flex-wrap gap-4 pt-4"><a href="#novelas" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 has-[&gt;svg]:px-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8">Descubre mis novelas</a><a href="#biografia" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-transparent shadow-xs hover:bg-accent dark:bg-transparent dark:border-input dark:hover:bg-input/50 h-10 has-[&gt;svg]:px-4 rounded-full px-8 border-2">Conoce mi historia</a></div>
+                            <p class="hero-line text-xl md:text-3xl leading-relaxed">Algunas verdades nunca deberían salir a la luz.</p>
+                            <p class="hero-copy text-lg md:text-xl leading-relaxed">Un nuevo thriller de misterio familiar que conduce desde Cádiz hasta la isla griega de Naxos. Secretos enterrados durante décadas, una investigación inesperada y una familia que hizo todo lo posible para proteger la verdad.</p>
+                            <p class="hero-status">Actualmente en fase de revisión y edición.</p>
+                            <div class="flex flex-wrap gap-4 pt-4"><a href="#proxima-novela" data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all h-10 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8">Descubre la próxima novela</a><a href="#novelas-publicadas" data-slot="button" class="hero-secondary inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all h-10 rounded-full px-8 border-2">Novelas publicadas</a></div>
                         </div>
-                        <div class="relative">
-                            <a href="#novelas" class="sg-cover sg-cover--offset" aria-label="Ir a novelas">
-                                <div class="sg-covers">
-                                    <div class="sg-cover sg-cover">
-                                        <img alt="Portada de la novela Sueña conmigo de Silvia Galindo Julián" src="/images/novel-romantic-cover-real.jpg" loading="lazy">
-                                    </div>
-
-                                    <div class="sg-cover">
-                                        <img alt="Portada de la novela Cuando lo pude contar de Silvia Galindo Julián" src="/images/novel-thriller-cover-real.png" loading="lazy">
-                                    </div>
-                                </div>
+                        <div class="hero-book-wrap relative">
+                            <span class="provisional-label">Portada provisional</span>
+                            <a href="#proxima-novela" class="hero-book" aria-label="Ir a Perdida entre sombras">
+                                <img alt="Portada provisional de Perdida entre sombras, próxima novela de Silvia Galindo Julián" src="/images/perdida-entre-sombras-portada-provisional.png">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
             </section>
-            <section id="novelas" class="py-24 relative">
+            <section id="proxima-novela" class="next-novel py-24 relative">
+                <div class="container relative z-10">
+                    <div class="next-novel-grid max-w-6xl mx-auto">
+                        <div class="next-novel-cover"><img alt="Portada provisional de Perdida entre sombras" src="/images/perdida-entre-sombras-portada-provisional.png" loading="lazy"></div>
+                        <div class="next-novel-copy">
+                            <p class="section-kicker">Thriller · Próximamente</p>
+                            <h2>Perdida entre sombras</h2>
+                            <p class="next-novel-quote">Algunas verdades nunca deberían salir a la luz.</p>
+                            <div class="synopsis"><p>Un niño enterrado en un extraño sarcófago. Una mujer cuyos restos aparecen décadas después. Y una familia que hizo todo lo posible para que nadie descubriera qué ocurrió.</p><p>Cuando Ágata, junto a su hijo Marín y Aria, comienza a investigar la identidad del pequeño, las pistas los conducen desde Cádiz hasta la isla griega de Naxos, donde el pasado sigue demasiado presente.</p><p>Fotografías ocultas, una anciana que desaparece después de ser interrogada y una tragedia ocurrida más de sesenta años atrás forman parte de una historia que alguien lleva toda una vida intentando proteger.</p><p>Para descubrir la verdad tendrán que reconstruir unos hechos que cambiaron para siempre a una familia.</p><p>Algunas mentiras nacen del miedo. Pero quienes mienten no siempre lo hacen para ocultar su propia culpa. Y las más peligrosas son aquellas que una familia decide guardar para siempre.</p></div>
+                            <p class="next-novel-status">La novela se encuentra actualmente en fase de revisión y edición.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="novelas-publicadas" class="py-24 relative">
 
                 <div class="container relative z-10">
                     <div class="text-center mb-16">
-                        <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground mb-4">Mis Novelas</h2>
-                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Dos historias únicas que te transportarán a mundos de emoción, romance y suspense</p>
+                        <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground mb-4">Novelas publicadas</h2>
+                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Las novelas publicadas de Silvia Galindo Julián</p>
                     </div>
                     <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
                         <div data-slot="card" class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm overflow-hidden border-2 border-border hover:shadow-2xl transition-all duration-500 bg-card">
@@ -140,11 +158,12 @@
                             <div class="lg:col-span-3 space-y-6">
                                 <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground">Sobre la Autora Silvia Galindo</h2>
                                 <div class="space-y-4 text-lg text-foreground leading-relaxed">
-                                    <p><span class="text-accent text-2xl font-semibold">Silvia Galindo Julián</span> es una escritora novel que ha conquistado los corazones de miles de lectores con su habilidad única para entrelazar romance y suspense en narrativas cautivadoras.</p>
+                                    <p><span class="text-accent text-2xl font-semibold">Silvia Galindo Julián</span> es una escritora que ha conectado con muchos lectores a través de historias en las que el romance, el suspense y los secretos familiares ocupan un lugar central.</p>
                                     <p>Nacida en Madrid en 1973 y criada en Coslada. Siempre supo que las palabras serían su forma de conectar con el mundo. Desde su infancia empezó a llenar cuadernos con poemas y pequeños relatos destinados a familiares y amigos. Aquella costumbre de inventar mundos nunca se apagó y, décadas después, decidió dar el salto y escribir sus propias historias, aquellas que la mantenían despierta por las noches.</p>
                                     <p>Su debut literario, <em>"Sueña conmigo"</em>, ambientada en la Escocia de 1890 capturó la esencia del primer amor con una sensibilidad que resonó especialmente con el público juvenil. Su segunda novela, <em>"Cuando lo pude contar"</em>, demostró su versatilidad al adentrarse en el thriller sin perder ese toque romántico que caracteriza su pluma.</p>
                                     <p>Los animales forman parte fundamental de su vida. Convive con un perro que colecciona calcetines como si fueran pruebas y una gata que baila sobre su teclado en los momentos más inoportunos. No ayudan… pero inspiran más de lo que admiten.</p>
                                     <p>Enamorada del mar y de las playas gaditanas, ha convertido esa tierra en un escenario imprescindible. Allí encuentra inspiración, sol, buenos vinos y, ocasionalmente, un viento de levante que parece decidido a cerrar libros, mover papeles y poner trabas justo cuando la trama empieza a ponerse interesante. Pero así es el misterio: a veces sopla fuerte.</p>
+                                    <p>Actualmente trabaja en su tercera novela, <em>Perdida entre sombras</em>, un thriller de misterio familiar que vuelve a situar parte de la historia en Cádiz y amplía su universo narrativo hasta la isla griega de Naxos.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,9 +174,13 @@
                 <div class="container">
                     <div class="text-center mb-16">
                         <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground mb-4">Lo que dicen los lectores</h2>
-                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Descubre por qué miles de lectores han quedado cautivados con estas historias</p>
+                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Opiniones de lectores de las novelas publicadas</p>
                     </div>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="verified-reviews max-w-3xl mx-auto text-center">
+                        <p>Las reseñas verificadas se incorporarán próximamente.</p>
+                        <div class="review-links"><a href="https://www.amazon.es/Sue%C3%B1a-conmigo-Silvia-Galindo-Juli%C3%A1n/dp/8411552500" target="_blank" rel="noopener noreferrer">Ver <em>Sueña conmigo</em> en Amazon</a><a href="https://www.amazon.es/Cuando-contar-Silvia-Galindo-Juli%C3%A1n-ebook/dp/B0GCN8WD83" target="_blank" rel="noopener noreferrer">Ver <em>Cuando lo pude contar</em> en Amazon</a></div>
+                    </div>
+                    <div class="reviews-legacy grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-hidden="true">
                         <div data-slot="card" class="text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-border hover:shadow-xl transition-all duration-300 bg-card">
                             <div data-slot="card-content" class="p-6 space-y-4">
                                 <div class="flex gap-1 text-accent"><svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg><svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"></path></svg></div>
@@ -224,8 +247,8 @@
             <section id="eventos" class="py-24 relative bg-background">
                 <div class="container">
                     <div class="text-center mb-16">
-                        <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground mb-4">Próximos Eventos</h2>
-                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Encuentra a Silvia en firmas de libros, presentaciones y charlas literarias</p>
+                        <h2 class="text-display text-4xl md:text-6xl font-bold text-foreground mb-4">Eventos anteriores</h2>
+                        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Una selección de presentaciones y encuentros que forman parte de su trayectoria.</p>
                     </div>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         <div data-slot="card" class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-border hover:border-primary transition-all hover:shadow-xl overflow-hidden">
@@ -612,7 +635,7 @@
                 <div class="container">
                     <div class="text-center space-y-4">
                         <h3 class="text-display text-3xl font-bold">Silvia Galindo Julián</h3>
-                        <p class="text-background/80">Autora de "Sueña conmigo" y "Cuando lo pude contar" • España</p>
+                        <p class="text-background/80">Autora de "Sueña conmigo", "Cuando lo pude contar" y del próximo thriller "Perdida entre sombras" • España</p>
                         <div class="flex justify-center gap-6 pt-4"><a href="https://www.instagram.com/silvia.galindo.jw" class="hover:text-primary transition-colors">Instagram</a><a href="https://www.facebook.com/silviagalindojulian" class="hover:text-primary transition-colors">Facebook</a><a href="https://x.com/SilviaGalindojw" class="hover:text-primary transition-colors">Twitter</a></div>
                         <p class="text-sm text-background/60 pt-8">© 2026 Silvia Galindo Julián. Todos los derechos reservados.</p>
                     </div>
